@@ -37,7 +37,7 @@ class valueIteration:
             for s in self.states:
                 best_action, best_action_value = self.next_best_action(s)
                 delta = max(delta, np.abs(best_action_value - self.statesValue[s]))
-                self.statesValue[s] = best_action_value
+                self.statesValue[s] = best_action_value # update states' values
             round_num += 1
 
         policy = np.zeros(len(self.states))

@@ -85,7 +85,7 @@ if __name__ == '__main__':
     label_state_list = sortCentroids(kmeans.centroids)
     stateList = labelList2stateList(kmeans.labels, label_state_list)
     print(len(stateList))
-    '''
+
     # then we have the state list, which contains multiple triple lists having state of Jun, Jul, and Aug
     # and we also have the spray list, which contains multiple triple lists having times of spray of Jun, Jul and Aug
     # we use those two lists to make the transition matrices
@@ -133,7 +133,7 @@ if __name__ == '__main__':
             policy = getActionNames(q_learning.generate_policy(), actions_names)
 
         print("\nIn " + month + " policy is " + str(policy))
-        '''
+        
 
 
 

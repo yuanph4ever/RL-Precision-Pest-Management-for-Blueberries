@@ -12,8 +12,11 @@ The data set I have includes the number of both male and female SWD in June, Jul
 # Model
 
 a. States: decided by K-means
+
 b. Actions: 0/1 to do spray/not do spray
+
 c. Transition Probabilities: computed by iterating the data set, stored in transition matrices
+
 d. Rewards: +10/-10 to smallest number/largest number of pest 
 
 # Methods
